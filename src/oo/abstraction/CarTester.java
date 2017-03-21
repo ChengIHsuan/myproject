@@ -47,6 +47,7 @@ public class CarTester {
 	}
 
 	class AA {
+		AA a = new AA();
 
 	}
 
