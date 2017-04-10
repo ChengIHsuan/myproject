@@ -16,22 +16,22 @@ public class Invoice {
 		a.add("886");
 		a.add("554");
 		// boolean flag = true;
-		int m = 0;
+		int n = 0;
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("請輸入發票號碼：");
 		String num = scanner.nextLine();
-		String n = num.substring(num.length() - 3);
+		String s = num.substring(num.length() - 3);
 
 		for (int i = 0; i < 4; i++) {
-			if (n.equals(a.get(i))) {
-				System.out.println("中獎");
+			if (s.equals(a.get(i))) {
+				System.out.println("恭喜你，中獎了!!");
 				break;
 			} else {
-				m = m + 1;
+				n = n + 1;
 			}
-			if (m == 4) {
-				System.out.println("沒中獎");
+			if (n == 4) {
+				System.out.println("很可惜，沒有中獎");
 			}
 		}
 	}
