@@ -9,6 +9,11 @@ public class Car {
 	int status;
 	float milage;
 	
+	public Car(String brand, String name){
+		this(brand, name, 0);   //只能放在第一行
+		System.out.println("哈哈哈");   
+	}
+	
 	public Car(String brand, String name, int cc){   //建構子
 		this.brand = brand;
 		this.name = name;
