@@ -7,6 +7,14 @@ public class Meal {
 	int meal;
 	int price;
 	String drink;
+	
+	
+
+//	public Meal(int meal, String drink) {
+//		super();
+//		this.meal = meal;
+//		this.drink = drink;
+//	}
 
 	public void order() {
 
@@ -35,7 +43,7 @@ public class Meal {
 			meal = 6;
 			price = price + 139;
 		}
-		if (order == 7) {
+		if (order ==7) {
 			meal = 7;
 			price = price + 159;
 		}
@@ -57,7 +65,6 @@ public class Meal {
 			drink = ("紅茶");
 		}
 	}
-
 	public void add() {
 		int choose = scanner.nextInt();
 		if (choose == 1) {
