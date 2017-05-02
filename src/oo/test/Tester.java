@@ -19,9 +19,9 @@ public class Tester {
 		a.set(2, "885");
 		System.out.println(a);
 		String data = a.get(3);
-//		int n = (int)a.get(4);
+//		int n = (int)a.get(4);k
 		
-		Student s1 = new Student();
+//		Student s1 = new Student();  //不同package
 		
 	}
 }
