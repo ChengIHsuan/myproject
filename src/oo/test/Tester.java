@@ -1,6 +1,7 @@
 package oo.test;
 import java.util.ArrayList;
 import oo.abstraction.Car;
+import oo.stati.Student;
 public class Tester {
 	
 	public static void main(String[] args){
@@ -19,6 +20,8 @@ public class Tester {
 		System.out.println(a);
 		String data = a.get(3);
 //		int n = (int)a.get(4);
+		
+		Student s1 = new Student();
+		
 	}
-
 }

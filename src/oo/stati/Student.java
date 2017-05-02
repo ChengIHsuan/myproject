@@ -12,6 +12,9 @@ public class Student {
 		System.out.println(pass);   //pass也屬於static
 	}  //static-什麼都還沒做就會執行
 	
+	Student(){
+		//拿掉public 只有同一個package能用
+	}
 	
 	public Student(int english, int math, int chinese) {
 		super();
