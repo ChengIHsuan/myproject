@@ -2,7 +2,7 @@ package oo.stati;
 
 import java.util.ArrayList;
 
-public class Tester {
+public class Tester {//extends Object-隱藏版自動繼承
 
 	public static void main(String[] args) {
 		System.out.println("Student.pass");  //比static晚print
@@ -28,6 +28,10 @@ public class Tester {
 			Student stu = list.get(i);
 			stu.print();  //gstu也是用自己的print
 		}
+		
+		Student stu = new Student();
+		System.out.println(stu); //oo.stati.Student@15db9742
+
 
 	}
 }
