@@ -1,30 +1,22 @@
 package oo.shopping;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Tester {
 
 	public static void main(String[] args) {
-		Customer cus = new Customer();
-		SilverCustomer sc = new SilverCustomer();
-		GoldenCustomer gc = new GoldenCustomer();
-
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("1.一般客戶 2.銀級客戶 3.金級客戶");
-		int c = scanner.nextInt();
-
-		System.out.println("輸入消費金額:");
-		int m = scanner.nextInt();
-		
-		if (c == 1) {
-			cus.print(m);
-		}
-		if (c == 2) {
-			sc.print(m);
-		}
-		if (c == 3) {
-			gc.print(m);
+		System.out.println("原價" + "\t" + "折扣後" + "\t" + "還原金");
+		ArrayList<Customer> list = new ArrayList();
+		list.add(new Customer(6000));
+		list.add(new SilverCustomer(8000));
+		list.add(new SilverCustomer(10000));
+		list.add(new GoldenCustomer(30000));
+		list.add(new Customer(2000));
+		list.add(new GoldenCustomer(10000));
+		for (int i = 0; i < list.size(); i++) {
+			Customer cus = list.get(i);
+			cus.print();
 		}
 	}
-
 }
