@@ -5,7 +5,6 @@ public class Customer {
 	int money;
 	
 	public Customer() {
-//		super();
 	}
 	
 	public Customer(int money){
