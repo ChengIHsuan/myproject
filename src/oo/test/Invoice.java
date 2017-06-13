@@ -15,7 +15,6 @@ public class Invoice {
 		a.add("821");
 		a.add("886");
 		a.add("554");
-		// boolean flag = true;
 		int n = 0;
 
 		Scanner scanner = new Scanner(System.in);
