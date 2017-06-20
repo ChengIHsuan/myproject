@@ -17,7 +17,7 @@ public class Tester {
 		// Customer cus = list.get(i);
 		for (Customer cust : list) {
 			if (cust instanceof SilverCustomer && !(cust instanceof GoldenCustomer)) {
-				System.out.println("*");
+				System.out.print("*");
 				SilverCustomer silver = (SilverCustomer) cust;
 			}
 			cust.print();
